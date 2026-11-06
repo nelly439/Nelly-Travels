@@ -21,7 +21,7 @@
             </ul>
         </nav>
     </header>
-
+    
 
     <section class="hero" id="home">
         <div class="hero-content">
@@ -34,7 +34,45 @@
             <a href="#destinations" class="hero-btn">
                 Explore Destinations
             </a>
+
+            <button id ="openModal" class= "hero-btn">
+                Book Your Trip
+            </button>
+
         </div>
+    </section>
+
+    <section class="booking">
+        <h2>Plan Your Next Trip</h2>
+
+        <form id="bookingForm">
+
+            <label for="name">Full Name</label>
+            <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            >
+
+            <label for="email">Email Address</label>
+            <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            >
+
+            <label for="destination">Choose Your Destination</label>
+            <select id="destination">
+                <option value="">Select a destination</option>
+                <option value="Paris">Paris</option>
+                <option value="maldives">Maldives</option>
+                <option value="Dubai">Dubai</option>
+            </select>
+
+            <button type="submit">Submit booking</button>
+
+            <p id="formMessage"></p>
+        </form>
     </section>
 
 
@@ -76,10 +114,29 @@
     </section>
 
     <footer id="contact">
-        <h3>Wanderlust.</h3>
-        <p>Email: hello@wanderlust.com</p>
-        <p>&copy; 2026 Wanderlust. All rights reserved.</p>
+        <h3>Nelly-Travels</h3>
+        <p>Email: nellytravels86@gmail.com</p>
+        <p>&copy; 2026 Nelly-Travels. All rights reserved.</p>
     </footer>
+
+    <div id="bookingModal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="closeModal" class="close">&times;</span>
+
+            <h2>Welcome To Nelly-Travels</h2>
+
+            <p>Ready to explore the world?</p>
+            <p>Fill in our booking form below to get started</p>
+
+            <button id="modalBookButton">
+                Plan My Trip
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
